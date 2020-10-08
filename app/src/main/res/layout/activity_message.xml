@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Messages.MessageActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEEEE"
+        android:id="@+id/MessageActivity_bar_layout">
+        
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MessageActivity_toolbar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/MessageActivity_user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/defualt_insta_pic"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/MessageActivity_user_img"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MessageActivity_fullname"
+                    android:text="Fullname"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MessageActivity_userName"
+                    android:text="Username"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MessageActivity_recyclerView"
+        android:layout_above="@+id/MessageActivity_bottom"
+        android:layout_below="@+id/MessageActivity_bar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:id="@+id/MessageActivity_bottom"
+        android:background="@drawable/btn_shape_2"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MessageActivity_text_send"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:hint="Type a message..."
+            android:layout_toStartOf="@id/MessageActivity_btn_send"
+            android:layout_centerVertical="true"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Send"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/MessageActivity_btn_send"
+            android:textColor="@color/blue_link"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

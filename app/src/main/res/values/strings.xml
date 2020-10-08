@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Instagram clone</string>
+
+
+    <!-- Firebase database fields -->
+    <string name="db_users">Users</string>
+    <string name="db_privatedetails">Privatedetails</string>
+    <string name="db_photos">Photo</string>
+    <string name="db_user_photos">User_Photo</string>
+    <string name="db_following">Following</string>
+    <string name="db_followers">Followers</string>
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_fullname">fullName</string>
+    <string name="field_website">website</string>
+    <string name="field_description">discription</string>
+    <string name="field_phone_number">phoneNumber</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_likes">likes</string>
+    <string name="field_caption">caption</string>
+    <string name="field_date_created">date_Created</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_tags">tags</string>
+    <string name="field_image_path">image_Path</string>
+    <string name="field_comments">comments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

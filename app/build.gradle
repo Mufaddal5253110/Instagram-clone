@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "my.insta.androrealm"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    // Firebase Stuffs
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-core:17.4.1'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //BottomNavigationView
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //Universal image loader Module
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    // Country Code Picker Module
+    implementation 'com.hbb20:ccp:2.3.1'
+
+    // Glide Module for profile image
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Instagram Story module
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+
+    // CropImage Module
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+
+    //CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //Push Notification
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+
+}

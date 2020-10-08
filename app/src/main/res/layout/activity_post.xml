@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post.PostActivity">
+
+    <Toolbar
+        android:id="@+id/post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_from_post"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="New Post"
+                android:textColor="@color/black"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:id="@+id/post_now"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/ic_check_right"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/sky_blue" />
+
+        </LinearLayout>
+
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/post_toolbar"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:id="@+id/added_image"
+            android:layout_weight="25"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/added_caption"
+            android:layout_weight="75"
+            android:layout_gravity="center_vertical"
+            android:hint="Write a caption..."
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/hr"
+        android:background="@color/lightgray"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/linear1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/added_tags"
+        android:hint="Tags"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/hr"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+</RelativeLayout>

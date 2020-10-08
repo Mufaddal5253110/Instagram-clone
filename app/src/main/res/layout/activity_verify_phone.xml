@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhone"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="OTP"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/Verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/white"
+            android:text="Verify"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/Resendotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/btnred"
+            android:text="Resend"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/darkgray"
+            android:textSize="16dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

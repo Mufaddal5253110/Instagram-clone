@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#CECECE</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="lightgray">#52000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="instafirstclor">#3c43e5</color>
+    <color name="instacenterclord">#d34267</color>
+    <color name="instalastclor">#f6ac35</color>
+    <color name="statusbarcolo">#CECECE</color>
+    <color name="textcolor">#464646</color>
+    <color name="icontint">#00363636</color>
+    <color name="yourSelectedColor">#FF0101</color>
+    <color name="darkgray">#AE000000</color>
+    <color name="blue_link">#246fd7</color>
+    <color name="sky_blue">#007cf7</color>
+    <color name="dark_purple">#23002b</color>
+    <color name="red">#FA2516</color>
+</resources>

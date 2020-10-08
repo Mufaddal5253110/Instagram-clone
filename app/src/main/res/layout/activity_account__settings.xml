@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Account_Settings">
+
+    <!--*******Top Tool Bar**********-->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/accountSettingToolbar"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="6dp"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="Option"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:id="@+id/profileName"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/accountSettingToolbar"
+        android:padding="10dp">
+
+        <!--*******Account Setting**********-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+        <!--*******Logout**********-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:drawableLeft="@drawable/ic_logout_exit"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/logout"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <!--*******Edit Profile**********-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:drawableLeft="@drawable/ic_edit_profile"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/edit_profile"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/FriendSingle_user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/defualt_insta_pic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/FriendSingle_user_img"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FriendSingle_userName"
+            android:text="Username"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FriendSingle_lastMsg"
+            android:text=""
+            android:maxLines="1"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
