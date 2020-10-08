@@ -11,8 +11,7 @@
 
 ## Connect with me:
 [<img align="left" alt="androrealm | YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://rb.gy/r4yzzi)
-[<img align="left" alt="dshakir52 | Instagram" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />](https://www.instagram.com/dshakir52/).
-[<img align="left" alt="gmail | Instagram" width="40px" src="https://user-images.githubusercontent.com/60619133/95458415-c0875500-098f-11eb-96f9-5f383a82054c.png" />](mufaddalshakir55@gmail.com).
+[<img align="left" alt="dshakir52 | Instagram" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />](https://www.instagram.com/dshakir52/)
 
 ## Features
 1. Login, Signup,Logout,Forgot password (with email verification)
